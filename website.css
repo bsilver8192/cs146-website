@@ -43,6 +43,7 @@ nav ul li a:hover {
 	font-size: 50px;
 	letter-spacing: 5px;
 	font-weight: bold;
+	display: inline-block;
 }
 .join {
 	background: #fff;
