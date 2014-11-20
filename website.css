@@ -98,6 +98,12 @@ nav ul li a:hover{
 	margin-top: 20px;
 	padding: 0 20px;
 }
+.info h1{
+    font-size: 1.7em;
+    color:#002EB8
+        
+}
+
 
 .terms{
 	text-align: center;
