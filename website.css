@@ -18,10 +18,14 @@ nav .right{
 }
 nav ul li{
 	display: inline-block;
+}
+nav ul li a{
 	line-height: 50px;
 	padding: 0 20px;
+	display: inline-block;
 }
-nav ul li:hover{
+
+nav ul li a:hover{
 	background: #072c96;
 	color: #eee;
 }
