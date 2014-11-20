@@ -1,41 +1,41 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #333;
 }
-a{
+a {
 	text-decoration: none;
 	color: #1969a6;
 }
-nav{
+nav {
 	padding: 0 20px;
 	background: #eee;
 	background-size: contain;
 }
-nav .right{
+nav .right {
 	float: right;
 }
-nav ul li{
+nav ul li {
 	display: inline-block;
 }
-nav ul li a{
+nav ul li a {
 	line-height: 50px;
 	padding: 0 20px;
 	display: inline-block;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
 	background: #072c96;
 	color: #eee;
 }
-#scroll{
+#scroll {
 	background: url(wine.jpg);
 	height: 350px;
 	width: 100%;
 	background-size: cover;
 }
-#scroll p{
+#scroll p {
 	color: #d1bdfa;
 	left: 55%;
 	position: relative;
@@ -44,15 +44,15 @@ nav ul li a:hover{
 	letter-spacing: 5px;
 	font-weight: bold;
 }
-.join{
+.join {
 	background: #fff;
 	text-align: center;
 	padding: 100px 0;
 }
-.join p{
+.join p {
 	font-size: 40px;
 }
-.join a{
+.join a {
 	display: inline-block;
 	margin-top: 30px;
 	padding: 10px 20px;
@@ -61,35 +61,35 @@ nav ul li a:hover{
 	font-size: 25px;
 	border-radius: 4px;
 }
-.join a:hover{
+.join a:hover {
 	background: #1950a8;
 }
-.testimonial{
+.testimonial {
 	background: #eee;
 	text-align: center;
 	padding: 100px 0;
 }
-.testimonial .quote{
+.testimonial .quote {
 	font-size: 30px;
 }
-.testimonial .quote::before, .testimonial .quote::after{
+.testimonial .quote::before, .testimonial .quote::after {
 	content: '"';
 	color: #1969a6;
 	font-size: 50px;
 }
-.testimonial .name{
+.testimonial .name {
 	font-size: 20px;
 	margin-top: 30px;
 }
-.info{
+.info {
 	text-align: center;
 	padding-top: 50px;
 }
-.info header{
+.info header {
 	font-size: 20px;
 	color: #1969a6;
 }
-.info p{
+.info p {
 	max-width: 500px;
 	margin: auto;
 	font-size: 17px;
@@ -98,40 +98,35 @@ nav ul li a:hover{
 	margin-top: 20px;
 	padding: 0 20px;
 }
-.info h1{
+.info h1 {
     font-size: 1.7em;
     color:#002EB8
-        
 }
 
 
-.terms{
+.terms {
 	text-align: center;
 	max-width: 900px;
 	margin: auto;
 	text-align: left;
 	padding: 0 20px;
 }
-.terms p{
+.terms p {
 	margin-top: 10px;
 }
-.terms ol{
+.terms ol {
 	margin: 20px 0;
 	margin-left: 20px;
 }
-.terms li{
+.terms li {
 	margin: 10px 0;
 	padding-left: 5px;
 }
-.terms h1{
+.terms h1 {
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
-.terms h2{
+.terms h2 {
 	font-size: 17px;
 	margin-top: 15px;
 }
-
-
-
-
