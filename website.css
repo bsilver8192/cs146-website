@@ -84,11 +84,11 @@ nav ul li a:hover {
 }
 .info {
 	text-align: center;
-	padding-top: 50px;
+	padding-bottom: 30px;
 }
 .info header {
 	font-size: 20px;
-	color: #1969a6;
+    	color: #333;
 }
 .info p {
 	max-width: 500px;
@@ -100,11 +100,10 @@ nav ul li a:hover {
 	padding: 0 20px;
 }
 .info h1 {
-    font-size: 1.7em;
-    color:#002EB8
+    	font-size: 1.7em;
+	color: #1969a6;
+    	margin-top: 40px;
 }
-
-
 .terms {
 	text-align: center;
 	max-width: 900px;
