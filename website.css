@@ -53,7 +53,7 @@ nav ul li a:hover {
 .join p {
   font-size: 40px;
 }
-.join a {
+.button {
   display: inline-block;
   margin-top: 30px;
   padding: 10px 20px;
@@ -62,7 +62,7 @@ nav ul li a:hover {
   font-size: 25px;
   border-radius: 4px;
 }
-.join a:hover {
+.button:hover {
   background: #1950a8;
 }
 .testimonial {
@@ -85,6 +85,9 @@ nav ul li a:hover {
 .info {
   text-align: center;
   padding-bottom: 30px;
+}
+.info article {
+  margin-top: 30px;
 }
 .info header {
   font-size: 20px;
@@ -110,6 +113,7 @@ nav ul li a:hover {
   margin: auto;
   text-align: left;
   padding: 0 20px;
+  margin-bottom: 30px;
 }
 .terms p {
   margin-top: 10px;
@@ -134,7 +138,6 @@ nav ul li a:hover {
 /*start of form css*/
 form {
   display:block;
-  background-color:#f3f3f3;
   padding:20px;
     width: 700px;
     margin-left:auto;
@@ -144,31 +147,46 @@ form {
 fieldset {
   border: solid 1px #a1a1a1;
   margin-bottom: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
-input, select,textarea {
+input, select {
   display: block;
   float: left;
   margin: 2px;
-  -webkit box-sizing: border-box;
-  -moz box-sizing:border-box;
-    
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  padding: 5px 10px;
+  border: 0px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  color: black;
+  font: 14px sans-serif;
+  border-radius: 3px;
+  width: 250px;
 }
-form input[type=text], input[type=password], select,textarea {
-  width: 200px
+select {
+  height: 28px;
+  padding: 0;
 }
-    
+input[type=reset], input[type=submit] {
+  width: 150px;
+}
 .inputitem {
   display: block;
   float: left;
 }
-
 input:required:invalid {
-  background: white right no-repeat url("invalid.png");
-    }
+  background: #eee right no-repeat url("invalid.png");
+  background-size: auto 80%;
+  background-position: right 5px top 2px;
+}
 input:required:valid {
-  background: white right no-repeat url("valid.png");
-    }
-
+  background: #eee right no-repeat url("valid.png");
+  background-size: auto 80%;
+  background-position: right 5px top 2px;
+}
 .labelitem {
   display: block;
   float: left;
@@ -179,13 +197,55 @@ input:required:valid {
 br {
   clear: left;
 }
-form input, select {
-  color: black;
-  font: 01em sans-serif;
-}
 #reset_submit {
   float: right;
 }
-    
+p.info{
+  margin-top: 8px;
+  padding-bottom: 0;
+}
+#match{
+  text-align: center;
+  display: none;
+}
+#match strong{
+  color: #1969a6;
+}
+#match h1{
+  color: #4CAF50;
+  margin-bottom: 30px;
+  font-size: 80px;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {  
+  0% { color: #009688; }
+  50% { color: #8BC34A; }
+  100% { color: #009688; }
+}
+
+@-webkit-keyframes blinker {  
+  0% { color: #009688; }
+  50% { color: #8BC34A; }
+  100% { color: #009688; }
+}
+
+@keyframes blinker {  
+  0% { color: #009688; }
+  50% { color: #8BC34A; }
+  100% { color: #009688; }
+}
     
     
