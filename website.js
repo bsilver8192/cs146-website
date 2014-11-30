@@ -12,6 +12,38 @@ window.onscroll = function() {
 
 function submitForm()
 {
-  document.getElementById("form1").style.display = "none";
-  document.getElementById("match").style.display = "block";
+  // Short names for things that this function does a lot because I don't feel
+  // like typing them repeatedly.
+  var byId = function(id) { return document.getElementById(id); };
+  var idValue = function(id) { return byId(id).value; }
+
+  byId("form1").style.display = "none";
+
+  byId("matching").style.display = "block";
+
+  var addressHTML = '';
+  addressHTML += idValue('firstname') + ' ' + idValue('lastname');
+  addressHTML += '<br />';
+  addressHTML += idValue('address1');
+  addressHTML += '<br />';
+  if (idValue('address2') != '') {
+      addressHTML += idValue('address2');
+      addressHTML += '<br />';
+  }
+  addressHTML += idValue('city') + ', ' + idValue('state') + ' ' +
+      idValue('zipcode');
+  byId('address').innerHTML = addressHTML;
+
+  infoHTML = '';
+  infoHTML += 'Username: ' + idValue('username');
+  infoHTML += '<br />';
+  infoHTML += 'Password: ' + idValue('password');
+  infoHTML += '<br />';
+  infoHTML += 'You were born in ' + idValue('birth_year');
+  byId('personal_info').innerHTML = infoHTML;
+
+  setTimeout(function(){
+      byId("matching").style.display = "none";
+      byId("match").style.display = "block";
+  }, 3500 + 1500 * Math.random());
 }

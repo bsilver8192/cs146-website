@@ -200,18 +200,22 @@ br {
 #reset_submit {
   float: right;
 }
-p.info{
+p.info {
   margin-top: 8px;
   padding-bottom: 0;
 }
-#match{
+#match, #matching {
   text-align: center;
   display: none;
 }
-#match strong{
+#matching > h1 {
+  padding-bottom: 10px;
+}
+#match strong {
   color: #1969a6;
 }
-#match h1{
+#match h1 {
+  padding-top: 15px;
   color: #4CAF50;
   margin-bottom: 30px;
   font-size: 80px;
@@ -246,4 +250,34 @@ p.info{
   0% { color: #009688; }
   50% { color: #8BC34A; }
   100% { color: #009688; }
+}
+
+#envelope {
+  width: 8.875in;
+  height: 3.875in;
+  border: 2px solid black;
+  background-color: #DDD;
+  margin: 0 auto;
+  position: relative;
+}
+#envelope > #return {
+  width: 25%;
+  float: left;
+  margin: 10px;
+}
+#envelope > #address {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+#envelope > #stamp {
+  float: right;
+  width: 2in;
+  height: 0.8in;
+  line-height: 0.8in;
+  border: 2px black solid;
+  background-color: white;
+  vertical-align: middle;
+  margin: 10px;
 }
